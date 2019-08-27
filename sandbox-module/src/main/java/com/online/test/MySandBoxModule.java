@@ -1,4 +1,4 @@
-package com.online.sandbox;
+package com.online.test;
 
 import com.alibaba.jvm.sandbox.api.Information;
 import com.alibaba.jvm.sandbox.api.Module;
@@ -23,8 +23,8 @@ public class MySandBoxModule implements Module {
     @Command("addLog")// 模块命令名
     public void addLog() {
         new EventWatchBuilder(moduleEventWatcher)
-                .onClass("com.sandbox.test.TestSandbox")// 想要对 TestSandbox 这个类进行切面
-                .onBehavior("test")// 想要对上面类的 bathSave 方法进行切面
+                .onClass("com.online.test.TestAdd")// 想要对 TestAdd 这个类进行切面
+                .onBehavior("test")// 想要对上面类的 test 方法进行切面
                 .onWatch(new AdviceListener() {
                     //对方法执行之前执行
                     @Override

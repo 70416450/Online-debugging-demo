@@ -28,7 +28,9 @@ public class TestAdd implements ApplicationRunner {
     }
 
     private void test(LongAdder longAdder) {
-        log.info("TestSandBox------->" + longAdder);
+        log.info("Arthas------->切入开始");
+        log.info("Test------->" + longAdder);
+        log.info("Arthas------->切入结束");
     }
 
 }

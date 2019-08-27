@@ -30,7 +30,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <!-- <mainClass>com.sandbox.test.MySandBoxModule</mainClass>-->
+                            <!-- <mainClass>com.online.test.MySandBoxModule</mainClass>-->
                         </manifest>
                     </archive>
                     <descriptorRefs>
